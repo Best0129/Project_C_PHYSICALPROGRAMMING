@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Language" content="th" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">HOME</h2>
+      <nav class="navigation">
+      </nav>
+  </header>
+  <div class="wrapper1">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="/photo/image1.jpg" style="width:100%; height:100%">
+      </div>
+        
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="/photo/image2.jpg" style="width:100%; height:100%">
+      </div>
+        
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="/photo/image3.jpg" style="width:100%; height:100%">
+      </div>
+        
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="/photo/image4.jpg" style="width:100%; height:750px">
+      </div>
+      <div style="text-align: center; margin-top: 2%;">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>   
+      </div>
+    </div>
+    <div class="blogcode">
+      <h2>Code</h2>
+      <img src="/photo/code.png">
+    </div>
+  </div>
+  <br>
+      
+  
+  <div class="wrapper2">
+    <div class="component">
+      <h2>ส่วนประกอบของงาน</h2>
+      <h3>1. Sensor Ultrasonic 1 อัน</h3>
+      <h3>2. บอร์ด arduino UNO 1 อัน</h3>
+      <h3>3. Breadboard 1 อัน</h3>
+      <h3>4. Motor servo 1 อัน</h3>
+      <h3>5. LED 2 หลอด</h3>
+      <h3>6. LDR Module 1 อัน</h3>
+      <h3>7. Resistor 220Ω 1 อัน</h3>
+      <h3>8. สายไฟ(ผู้-ผู้), (ผู้-เมีย)</h3>
+    </div>
+
+    <div class="projectdesc">
+      <h2>คำอธิบายโครงงาน</h2>
+
+    </div>
+  </div>
+  
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      </script>
+
+  </body>
+</html>
