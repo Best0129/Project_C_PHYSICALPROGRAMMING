@@ -120,7 +120,7 @@ header {
     height: 500px;
     margin-left: 5%;
     margin-top: 20%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     display: flex;
 }
 
@@ -139,7 +139,7 @@ header {
 .projectdesc{
     position: relative;
     width: 75%;
-    height: 500px;
+    height: 550px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -169,6 +169,12 @@ header {
 .projectdesc h2{
     text-align: center;
 }
+
+.projectdesc h3,h4{
+    padding-left: 2%;
+    font-size: 20px;
+}
+
 
 .component h2{
     padding: 5px 20px 5px 30px;
